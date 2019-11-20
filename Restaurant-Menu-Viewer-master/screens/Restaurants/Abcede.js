@@ -1,17 +1,19 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { StyleSheet, Image, Platform, UIManager } from 'react-native';
-import { Container, Fab, Tab, ScrollableTab, Tabs, TabHeading, Card, CardItem, Button, Left, Right, Body, Icon, Text } from 'native-base';
-import { ScrollView, FlatList } from 'react-native-gesture-handler';
+import { Container, Tab, ScrollableTab, Tabs, TabHeading, Card, CardItem, Body, Icon, Text } from 'native-base';
+import { FlatList } from 'react-native-gesture-handler';
 import AbcedeDish from '../../data/AbcedesRestoDish';
 
 export default class Abcede extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: 'true',
-      item: AbcedeDish
+      item: AbcedeDish,
     };
-    if (Platform.OS === "android") {
+    if (Platform.OS === 'android') {
       UIManager.setLayoutAnimationEnabledExperimental &&
         UIManager.setLayoutAnimationEnabledExperimental(true);
     }
@@ -19,8 +21,8 @@ export default class Abcede extends React.Component {
     static navigationOptions = {
         title: 'Menu',
         tabBarIcon:({ tintColor}) => {
-          return <Icon name='bars' type='FontAwesome5' style={{color: tintColor}} />
-      }
+          return <Icon name="bars" type="FontAwesome5" style={{color: tintColor}} />;
+      },
     }
     render() {
         return (
@@ -35,8 +37,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "breakfastmeal"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'breakfastmeal'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -46,7 +48,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -62,8 +64,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "desserts"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'desserts'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -73,7 +75,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -89,8 +91,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "drinks"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'drinks'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -100,7 +102,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -116,8 +118,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "extras/ad-ons"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'extras/ad-ons'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -127,7 +129,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -143,8 +145,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "fish(halforoneKG)"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'fish(halforoneKG)'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -154,7 +156,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -170,8 +172,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "fried"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'fried'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -181,7 +183,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -197,8 +199,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "inihaw"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'inihaw'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -208,7 +210,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -224,8 +226,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "kinilaw"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'kinilaw'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -235,7 +237,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -251,8 +253,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "noodlesandpastabilao"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'noodlesandpastabilao'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -262,7 +264,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -278,8 +280,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "noodlesandpasta"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'noodlesandpasta'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -289,7 +291,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -305,8 +307,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "sandwichesandfries"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'sandwichesandfries'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -316,7 +318,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -332,8 +334,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "sizzlerswithrice"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'sizzlerswithrice'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -343,7 +345,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -359,8 +361,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "sizzling"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'sizzling'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -370,7 +372,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -386,8 +388,8 @@ export default class Abcede extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "special"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'special'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -397,7 +399,7 @@ export default class Abcede extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -406,13 +408,13 @@ export default class Abcede extends React.Component {
           </Tab>
         </Tabs>
             </Container>
-        )
+        );
     }
 }
 const styles = StyleSheet.create({
     cardImage:{
-      height: 200, 
-      width: null, 
-      flex: 1
-    }
+      height: 200,
+      width: null,
+      flex: 1,
+    },
   });

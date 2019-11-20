@@ -1,343 +1,410 @@
-export default (GroundzeroDish=[
-	{
-		name:"Tuna Pizza",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Ham & Mushroom",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Double Pepperoni",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Double Cheese",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Hot & Spicy",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Mexican Delight",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Bacon Migz",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Deep Dish Pizza",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Thin & Crispy",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Classic Pan Pizza",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Crust Pizza",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Creamy Tuna Rolls",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Bacon Twist",
-		price:"359",
-		groupings:"oldtime"
-	},
-	{
-		name:"Pork Piccone",
-		price:"220",
-		groupings:"kalissa"
-	},
-	{
-		name:"Pizza on da Cup",
-		price:"168",
-		groupings:"kalissa"
-	},
-	{
-		name:"Spaghetti",
-		price:"68",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Baked Spaghetti",
-		price:"108",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Creamy Tuna Pasta",
-		price:"120",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Baked Ravioli",
-		price:"168",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Baked Pizza Lasagna",
-		price:"180",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Cheese Sticks",
-		price:"148",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Jalapeno Sticks",
-		price:"138",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Mozzarella Sticks",
-		price:"140",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Garlic Knots",
-		price:"55",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Garlic Bread",
-		price:"55",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Pizza Puff Broccoli Chicken",
-		price:"180",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Cheezy Bacon w/ Wedges",
-		price:"180",
-		groupings:"breadsticks"
-	},
-	{
-		name:"Whole Sisig + Egg",
-		price:"180/220",
-		groupings:"sideorder"
-	},
-	{
-		name:"Sizzling Pork,Liver",
-		price:"220",
-		groupings:"sideorder"
-	},
-	{
-		name:"Pork en Tofu",
-		price:"250",
-		groupings:"sideorder"
-	},
-	{
-		name:"Sizzling Chilli con Hot",
-		price:"220",
-		groupings:"sideorder"
-	},
-	{
-		name:"Potato Fries",
-		price:"120",
-		groupings:"sideorder"
-	},
-	{
-		name:"French Fries",
-		price:"100",
-		groupings:"sideorder"
-	},
-	{
-		name:"Crispy Mushroom",
-		price:"140",
-		groupings:"sideorder"
-	},
-	{
-		name:"Fried Kangkong",
-		price:"140",
-		groupings:"sideorder"
-	},
-	{
-		name:"Sizzling Hotdog",
-		price:"180",
-		groupings:"sideorder"
-	},
-	{
-		name:"Potato Wedges",
-		price:"120",
-		groupings:"sideorder"
-	},
-	{
-		name:"Sisg w/ Rice + Egg",
-		price:"180/220",
-		groupings:"meals"
-	},
-	{
-		name:"Fish Fillet w/ Tofu & Egg",
-		price:"250",
-		groupings:"meals"
-	},
-	{
-		name:"2 pcs Crispy Chicken",
-		price:"148",
-		groupings:"meals"
-	},
-	{
-		name:"Chicken BBQ w/ Rice",
-		price:"168",
-		groupings:"meals"
-	},
-	{
-		name:"Crispy Bangus w/ Rice",
-		price:"140",
-		groupings:"meals"
-	},
-	{
-		name:"Lucban Longganisa w/ Rice",
-		price:"148",
-		groupings:"meals"
-	},
-	{
-		name:"Pancit Lucban",
-		price:"190",
-		groupings:"pancit"
-	},
-	{
-		name:"Bihon Guisado",
-		price:"190",
-		groupings:"pancit"
-	},
-	{
-		name:"Sariwa Bihon Guisado",
-		price:"220",
-		groupings:"pancit"
-	},
-	{
-		name:"Lomi",
-		price:"190",
-		groupings:"pancit"
-	},
-	{
-		name:"Chami Lucena",
-		price:"190",
-		groupings:"pancit"
-	},
-	{
-		name:"Chami Lucban",
-		price:"190",
-		groupings:"pancit"
-	},
-	{
-		name:"Crispy Pata med/lrg",
-		price:"590/650",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Whole Chicken",
-		price:"420/590",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Sinigang na Lechon",
-		price:"250/350",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Babyback Ribs",
-		price:"350",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Lebanese Spareribs",
-		price:"350/450",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Buffalo Wings med/lrg",
-		price:"450/650",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Chopsuey med/lrg",
-		price:"250/450",
-		groupings:"lutongbahay"
-	},
-	{
-		name:"Ice Tea",
-		price:"55",
-		groupings:"drinks"
-	},
-	{
-		name:"Blue Lemonade",
-		price:"55",
-		groupings:"drinks"
-	},
-	{
-		name:"Cucumber Crushed",
-		price:"55",
-		groupings:"drinks"
-	},
-	{
-		name:"Pineapple Crushed",
-		price:"55",
-		groupings:"drinks"
-	},
-	{
-		name:"Halo-Halo",
-		price:"88",
-		groupings:"drinks"
-	},
-	{
-		name:"Choco Frappe",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Caramel Frappe",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Machiato Frappe",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Avocado Frappe",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Buco Smoothie",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Blueberry Smoothie",
-		price:"55",
-		groupings:"frappe"
-	},
-	{
-		name:"Strawberry Smoothie",
-		price:"55",
-		groupings:"frappe"
-	},
-	
-	]);
+export default (GroundzeroDish = [
+  {
+    name: 'Tuna Pizza',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/tunapizza.jpg'),
+  },
+  {
+    name: 'Ham & Mushroom',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/hamandmushroom.jpeg'),
+  },
+  {
+    name: 'Double Pepperoni',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/doublepepperoni.jpg'),
+  },
+  {
+    name: 'Double Cheese',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/doublecheese.jpg'),
+  },
+  {
+    name: 'Hot & Spicy',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/hotandspicy.jpg'),
+  },
+  {
+    name: 'Mexican Delight',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/mexicandelight.jpg'),
+  },
+  {
+    name: 'Bacon Migz',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/baconmigz.jpg'),
+  },
+  {
+    name: 'Deep Dish Pizza',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/deepdish.jpg'),
+  },
+  {
+    name: 'Thin & Crispy',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/thinandcrispy.jpeg'),
+  },
+  {
+    name: 'Classic Pan Pizza',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/classicpan.jpeg'),
+  },
+  {
+    name: 'Crust Pizza',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/crustpizza.jpg'),
+  },
+  {
+    name: 'Creamy Tuna Rolls',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/creamytunarolls.jpg'),
+  },
+  {
+    name: 'Bacon Twist',
+    price: '359',
+    groupings: 'oldtime',
+    image: require('../img/groundzero/oldtimerfavorite/bacontwist.jpg'),
+  },
+  {
+    name: 'Pork Piccone',
+    price: '220',
+    groupings: 'kalissa',
+    image: require('../img/groundzero/kalissa/porkpiccone.jpg'),
+  },
+  {
+    name: 'Pizza on da Cup',
+    price: '168',
+    groupings: 'kalissa',
+    image: require('../img/groundzero/kalissa/pizzaondacup.jpg'),
+  },
+  {
+    name: 'Spaghetti',
+    price: '68',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/spaghetti.jpg'),
+  },
+  {
+    name: 'Baked Spaghetti',
+    price: '108',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/bakedspaghetti.jpg'),
+  },
+  {
+    name: 'Creamy Tuna Pasta',
+    price: '120',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/creamytunapasta.jpg'),
+  },
+  {
+    name: 'Baked Ravioli',
+    price: '168',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/bakedravioli.jpg'),
+  },
+  {
+    name: 'Baked Pizza Lasagna',
+    price: '180',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/bakedpizzalasagna.jpg'),
+  },
+  {
+    name: 'Cheese Sticks',
+    price: '148',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/cheesesticks.jpg'),
+  },
+  {
+    name: 'Jalapeno Sticks',
+    price: '138',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/jalapenosticks.jpg'),
+  },
+  {
+    name: 'Mozzarella Sticks',
+    price: '140',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/mozzarellasticks.jpeg'),
+  },
+  {
+    name: 'Garlic Knots',
+    price: '55',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/garlicknots.jpg'),
+  },
+  {
+    name: 'Garlic Bread',
+    price: '55',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/garlicbread.jpeg'),
+  },
+  {
+    name: 'Pizza Puff Broccoli Chicken',
+    price: '180',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/pizzapuffbroccolichicken.jpg'),
+  },
+  {
+    name: 'Cheezy Bacon w/ Wedges',
+    price: '180',
+    groupings: 'breadsticks',
+    image: require('../img/groundzero/breadsticks/cheezybaconwithwedges.jpg'),
+  },
+  {
+    name: 'Whole Sisig + Egg',
+    price: '180/220',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/wholesisigandegg.jpg'),
+  },
+  {
+    name: 'Sizzling Pork,Liver',
+    price: '220',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/sizzlingporkliver.jpg'),
+  },
+  {
+    name: 'Pork en Tofu',
+    price: '250',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/porkentofu.jpg'),
+  },
+  {
+    name: 'Sizzling Chilli con Hot',
+    price: '220',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/sizzlingchill.jpg'),
+  },
+  {
+    name: 'Potato Fries',
+    price: '120',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/potatofries.jpg'),
+  },
+  {
+    name: 'French Fries',
+    price: '100',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/frenchfries.jpeg'),
+  },
+  {
+    name: 'Crispy Mushroom',
+    price: '140',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/crispymushroom.jpg'),
+  },
+  {
+    name: 'Fried Kangkong',
+    price: '140',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/friedkangkong.jpg'),
+  },
+  {
+    name: 'Sizzling Hotdog',
+    price: '180',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/sizzlinghotdog.jpg'),
+  },
+  {
+    name: 'Potato Wedges',
+    price: '120',
+    groupings: 'sideorder',
+    image: require('../img/groundzero/sideorder/potatowedges.jpeg'),
+  },
+  {
+    name: 'Sisg w/ Rice + Egg',
+    price: '180/220',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/sisigwithriceandegg.jpg'),
+  },
+  {
+    name: 'Fish Fillet w/ Tofu & Egg',
+    price: '250',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/fishfilletwithtofu.jpg'),
+  },
+  {
+    name: '2 pcs Crispy Chicken',
+    price: '148',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/2pcscrispychicken.jpg'),
+  },
+  {
+    name: 'Chicken BBQ w/ Rice',
+    price: '168',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/chickenbbqwithrice.jpg'),
+  },
+  {
+    name: 'Crispy Bangus w/ Rice',
+    price: '140',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/chickenbbqwithrice.jpg'),
+  },
+  {
+    name: 'Lucban Longganisa w/ Rice',
+    price: '148',
+    groupings: 'meals',
+    image: require('../img/groundzero/meals/lucbanlongganisa.jpg'),
+  },
+  {
+    name: 'Pancit Lucban',
+    price: '190',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/pancitlucban.jpg'),
+  },
+  {
+    name: 'Bihon Guisado',
+    price: '190',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/bihonguisado.jpg'),
+  },
+  {
+    name: 'Sariwa Bihon Guisado',
+    price: '220',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/sariwabihonguisado.jpg'),
+  },
+  {
+    name: 'Lomi',
+    price: '190',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/lomi.jpg'),
+  },
+  {
+    name: 'Chami Lucena',
+    price: '190',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/chamilucena.jpg'),
+  },
+  {
+    name: 'Chami Lucban',
+    price: '190',
+    groupings: 'pancit',
+    image: require('../img/groundzero/pancit/chamilucban.jpg'),
+  },
+  {
+    name: 'Crispy Pata med/lrg',
+    price: '590/650',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/crispypata.jpg'),
+  },
+  {
+    name: 'Whole Chicken',
+    price: '420/590',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/wholechicken.jpg'),
+  },
+  {
+    name: 'Sinigang na Lechon',
+    price: '250/350',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/sinigangnalechon.jpg'),
+  },
+  {
+    name: 'Babyback Ribs',
+    price: '350',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/babybackribs.jpg'),
+  },
+  {
+    name: 'Lebanese Spareribs',
+    price: '350/450',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/lebanesespareribs.jpeg'),
+  },
+  {
+    name: 'Buffalo Wings med/lrg',
+    price: '450/650',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/buffalowings.jpg'),
+  },
+  {
+    name: 'Chopsuey med/lrg',
+    price: '250/450',
+    groupings: 'lutongbahay',
+    image: require('../img/groundzero/lutongbahay/chopsuey.jpg'),
+  },
+  {
+    name: 'Ice Tea',
+    price: '55',
+    groupings: 'drinks',
+    image: require('../img/groundzero/drinks/icetea.jpg'),
+  },
+  {
+    name: 'Blue Lemonade',
+    price: '55',
+    groupings: 'drinks',
+    image: require('../img/groundzero/drinks/bluelemonade.jpg'),
+  },
+  {
+    name: 'Cucumber Crushed',
+    price: '55',
+    groupings: 'drinks',
+    image: require('../img/groundzero/drinks/cucumbercrushed.jpg'),
+  },
+  {
+    name: 'Pineapple Crushed',
+    price: '55',
+    groupings: 'drinks',
+    image: require('../img/groundzero/drinks/pineapplecrushed.jpg'),
+  },
+  {
+    name: 'Halo-Halo',
+    price: '88',
+    groupings: 'drinks',
+    image: require('../img/groundzero/drinks/halohalo.jpg'),
+  },
+  {
+    name: 'Choco Frappe',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/chocofrappe.jpg'),
+  },
+  {
+    name: 'Caramel Frappe',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/caramelfrappe.jpg'),
+  },
+  {
+    name: 'Machiato Frappe',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/machiatofrappe.jpg'),
+  },
+  {
+    name: 'Avocado Frappe',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/avocadosmoothie.jpg'),
+  },
+  {
+    name: 'Buco Smoothie',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/bucosmoothie.jpg'),
+  },
+  {
+    name: 'Blueberry Smoothie',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/blueberrysmoothie.jpg'),
+  },
+  {
+    name: 'Strawberry Smoothie',
+    price: '55',
+    groupings: 'frappe',
+    image: require('../img/groundzero/frappe/strawberrysmoothie.jpeg'),
+  },
+]);

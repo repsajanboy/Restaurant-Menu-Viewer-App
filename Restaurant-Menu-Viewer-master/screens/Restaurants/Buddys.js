@@ -1,17 +1,19 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import { StyleSheet, Image, Platform, UIManager } from 'react-native';
-import { Container, Fab, Tab,ScrollableTab, Tabs, TabHeading, Card, CardItem, Button, Left, Right, Body, Icon, Text } from 'native-base';
-import { ScrollView, FlatList } from 'react-native-gesture-handler';
+import { Container, Tab,ScrollableTab, Tabs, TabHeading, Card, CardItem, Body, Icon, Text } from 'native-base';
+import {FlatList } from 'react-native-gesture-handler';
 import BuddysDish from '../../data/BuddysDish';
 
 export default class Chitos extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: 'true',
-      item: BuddysDish
+      item: BuddysDish,
     };
-    if (Platform.OS === "android") {
+    if (Platform.OS === 'android') {
       UIManager.setLayoutAnimationEnabledExperimental &&
         UIManager.setLayoutAnimationEnabledExperimental(true);
     }
@@ -19,8 +21,8 @@ export default class Chitos extends React.Component {
     static navigationOptions = {
         title: 'Menu',
         tabBarIcon:({ tintColor}) => {
-          return <Icon name='bars' type='FontAwesome5' style={{color: tintColor}} />
-      }
+          return <Icon name="bars" type="FontAwesome5" style={{color: tintColor}} />;
+      },
     }
     render() {
         return (
@@ -35,8 +37,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "noodles"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'noodles'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -46,7 +48,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -62,8 +64,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "sizzlers"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'sizzlers'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -73,7 +75,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -89,8 +91,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "bbq"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'bbq'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -100,7 +102,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -116,8 +118,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "breakfast"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'breakfast'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -127,7 +129,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -143,8 +145,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "sandwiches"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'sandwiches'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -154,7 +156,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -170,8 +172,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "pizza"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'pizza'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -181,7 +183,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -197,8 +199,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "combo"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'combo'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -208,7 +210,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -224,8 +226,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "bilao"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'bilao'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -235,7 +237,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -251,8 +253,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "salad"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'salad'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -262,7 +264,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -278,8 +280,8 @@ export default class Chitos extends React.Component {
               style={{ marginTop: 3, backgroundColor: '#dfdfdf' }}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
-                if(item.groupings== "drinks"){
-                  return<Card style={{flex: 0, borderRadius: 10}}>
+                if (item.groupings === 'drinks'){
+                  return <Card style={{flex: 0, borderRadius: 10}}>
                     <CardItem cardBody bordered >
                       <Image source={item.image} style={styles.cardImage}/>
                     </CardItem>
@@ -289,7 +291,7 @@ export default class Chitos extends React.Component {
                         <Text>Php {item.price}</Text>
                       </Body>
                     </CardItem>
-                    </Card>
+                    </Card>;
                 }
               }
               }
@@ -298,13 +300,13 @@ export default class Chitos extends React.Component {
           </Tab>
         </Tabs>
             </Container>
-        )
+        );
     }
 }
 const styles = StyleSheet.create({
     cardImage:{
-      height: 200, 
-      width: null, 
-      flex: 1
-    }
+      height: 200,
+      width: null,
+      flex: 1,
+    },
   });

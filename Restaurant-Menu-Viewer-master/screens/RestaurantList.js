@@ -1,3 +1,5 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 /*This is an Example of SearchBar in React Native*/
 import * as React from 'react';
 import { View, StyleSheet, FlatList, ActivityIndicator, Platform, UIManager, Image } from 'react-native';
@@ -6,25 +8,25 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { SearchBar } from 'react-native-elements';
 
 import staticRestaurant from '../data/staticRestaurant';
- 
+
 export default class App extends React.Component {
   static navigationOptions = {
     tabBarIcon:({ tintColor}) => {
-        return <Icon name='md-home' style={{color: tintColor}} />
-    }
+        return <Icon name="md-home" style={{color: tintColor}} />;
+    },
 }
   constructor(props) {
     super(props);
     this.state = {
-      query: "",
+      query: '',
       item: staticRestaurant,
       dataBackup: staticRestaurant,
       isLoading: false,
       page: 1,
       seed: 1,
-      refreshing: false
+      refreshing: false,
     };
-    if (Platform.OS === "android") {
+    if (Platform.OS === 'android') {
       UIManager.setLayoutAnimationEnabledExperimental &&
         UIManager.setLayoutAnimationEnabledExperimental(true);
     }
@@ -38,10 +40,10 @@ export default class App extends React.Component {
     });
     this.setState({
       query: text,
-      item: newData
+      item: newData,
     });
   };
-  
+
   render() {
     if (this.state.isLoading) {
       //Loading View while data is loading
@@ -67,9 +69,8 @@ export default class App extends React.Component {
               this.filterList(text);
             }}
             onPressCancel={() => {
-              this.filterList("");
+              this.filterList('');
             }}
-            onPress={() => alert("onPress")}
             value = {this.state.query}
           />
           <FlatList
@@ -78,7 +79,7 @@ export default class App extends React.Component {
           enableEmptySections={true}
           style={{ marginTop: 10, padding: 10, backgroundColor: '#dfdfdf' }}
           keyExtractor={(item, index) => index.toString()}
-          renderItem={({ item }) => 
+          renderItem={({ item }) =>
             // Single Comes here which will be repeatative for the FlatListItems
             <ScrollView>
               <Card style={{flex: 0, borderRadius: 10}}>
@@ -120,17 +121,17 @@ export default class App extends React.Component {
     );
   }
 }
- 
+
 const styles = StyleSheet.create({
   viewStyle: {
     justifyContent: 'center',
     flex: 1,
     backgroundColor:'white',
-    marginTop: Platform.OS == 'ios'? 30 : 0
+    marginTop: Platform.OS === 'ios' ? 30 : 0,
   },
   cardImage:{
-    height: 200, 
-    width: null, 
+    height: 200,
+    width: null,
     flex: 1,
-  }
+  },
 });

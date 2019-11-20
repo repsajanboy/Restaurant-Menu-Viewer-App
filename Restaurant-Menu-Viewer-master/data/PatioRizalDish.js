@@ -1,620 +1,747 @@
-export default (PatioRizalDish=[
-	{
-		name:"Bacon Strips With Egg",
-		price:"129",
-		groupings:"americanbreakfast",
-	},
-	{
-		name:"Spanish Omelet",
-		price:"129",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Bacon Mushroom & Cheese Omelet",
-		price:"129",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Pancake With Canadian Bacon & Egg",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Pancake With Sausage",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Langgonisang Lucabn",
-		price:"139",
-		groupings:"filipinobreakfast"
-	},
-	{
-		name:"Corned Beef",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Daing na Bangus",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Dried Biya",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Tocina",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Kinulob",
-		price:"139",
-		groupings:"americanbreakfast"
-	},
-	{
-		name:"Plain Rice",
-		price:"35",
-		groupings:"rice"
-	},
-	{
-		name:"Garlic Rice",
-		price:"35",
-		groupings:"rice"
-	},
-	{
-		name:"Shanghai Rice",
-		price:"35",
-		groupings:"rice"
-	},
-	{
-		name:"Yan Chow Rice",
-		price:"35",
-		groupings:"rice"
-	},
-	{
-		name:"Spaghetti Bolognese",
-		price:"145",
-		groupings:"pasta"
-	},
-	{
-		name:"Fettuccini Carbonara",
-		price:"150",
-		groupings:"pasta"
-	},
-	{
-		name:"Baked Macaroni",
-		price:"145",
-		groupings:"pasta"
-	},
-	{
-		name:"Pepperoni & Sausage (Double/Family)",
-		price:"255/375",
-		groupings:"pizza"
-	},
-	{
-		name:"Hawaiian Delight (Double/Family)",
-		price:"245/365",
-		groupings:"pizza"
-	},	{
-		name:"Ham & Cheese (Double/Family)",
-		price:"245/365",
-		groupings:"pizza"
-	},	{
-		name:"Mafioso (Double/Family)",
-		price:"255/375",
-		groupings:"pizza"
-	},	{
-		name:"Vegetarian (Double/Family)",
-		price:"245/365",
-		groupings:"pizza"
-	},	{
-		name:"Pepperoni (Double/Family)",
-		price:"245/365",
-		groupings:"pizza"
-	},	{
-		name:"Pan Pizza",
-		price:"140",
-		groupings:"pizza"
-	},
-	{
-		name:"Shrimp with Cashew Nuts (Small/Medium)",
-		price:"200/300",
-		groupings:"seafoods"
-	},
-	{
-		name:"Shrimp with Garlic (Small/Medium)",
-		price:"195/295",
-		groupings:"seafoods"
-	},
-	{
-		name:"Fish Fillet with LBS (Small/Medium)",
-		price:"185/285",
-		groupings:"seafoods"
-	},
-	{
-		name:"Fish Fillet with SSS (Small/Medium)",
-		price:"215/315",
-		groupings:"seafoods"
-	},
-	{
-		name:"Stuffed Squid (Small/Medium)",
-		price:"165/295",
-		groupings:"seafoods"
-	},
-	{
-		name:"Tanigue with Vegetables (Small/Medium)",
-		price:"230/315",
-		groupings:"seafoods"
-	},
-	{
-		name:"Crab Fuyong",
-		price:"215",
-		groupings:"seafoods"
-	},
-	{
-		name:"Sinigang na Tanigue",
-		price:"305",
-		groupings:"seafoods"
-	},
-	{
-		name:"Sinigang na Hipon",
-		price:"295",
-		groupings:"seafoods"
-	},
-	{
-		name:"Sinigang na Salmon",
-		price:"330",
-		groupings:"seafoods"
-	},
-	{
-		name:"Salmon Steak",
-		price:"340",
-		groupings:"seafoods"
-	},
-	{
-		name:"Chopsuey (Small/Medium)",
-		price:"205/305",
-		groupings:"vegetables"
-	},
-	{
-		name:"Stir Fry Broccoli (Small/Medium)",
-		price:"205/305",
-		groupings:"vegetables"
-	},
-	{
-		name:"Pinakbet (Small/Medium)",
-		price:"210/310",
-		groupings:"vegetables"
-	},
-	{
-		name:"Ampalaya Con Carne (Small/Medium)",
-		price:"195/295",
-		groupings:"vegetables"
-	},
-	{
-		name:"Mixed Vegetables (Small/Medium)",
-		price:"175/275",
-		groupings:"vegetables"
-	},
-	{
-		name:"Beef with Broccoli (Small/Medium)",
-		price:"265/365",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Beef with Oyster (Small/Medium)",
-		price:"235/335",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Beef with Ginger & Onion (Small/Medium)",
-		price:"235/335",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Stir Fry Beef with Hoisin Sauce (Small/Medium)",
-		price:"265/365",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Chili Pork Spareribs (Small/Medium)",
-		price:"240/340",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Sinigang na Baboy",
-		price:"280",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Kare-Kare",
-		price:"335",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Lechon Kare-Kare",
-		price:"330",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Lechon Kawali",
-		price:"",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Crispy Pata",
-		price:"450",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Patatim",
-		price:"550",
-		groupings:"beefandpork"
-	},
-	{
-		name:"Beef with Ampalaya",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Beef with Oyster Sauce",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Fish Fillet Lemon Butter Sauce",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Lumpiang Shanghai",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Chicken with Chili Garlic",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Lechon Kawali",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Pork Belly with Sweet & Sour Sauce",
-		price:"155",
-		groupings:"budgetmeals"
-	},
-	{
-		name:"Calamares",
-		price:"155",
-		groupings:"appetizer"
-	},
-	{
-		name:"Cheese Sticks",
-		price:"135",
-		groupings:"appetizer"
-	},
-	{
-		name:"Nachos",
-		price:"145",
-		groupings:"appetizer"
-	},
-	{
-		name:"French Fries",
-		price:"85",
-		groupings:"appetizer"
-	},
-	{
-		name:"Kinilaw na Tanigue",
-		price:"195",
-		groupings:"appetizer"
-	},
-	{
-		name:"Lumpiang Shanghai",
-		price:"175",
-		groupings:"appetizer"
-	},
-	{
-		name:"Fish Fillet",
-		price:"165",
-		groupings:"appetizer"
-	},
-	{
-		name:"Asparagus with Chicken",
-		price:"175",
-		groupings:"soup"
-	},
-	{
-		name:"Asparagus with Crabmeat",
-		price:"175",
-		groupings:"soup"
-	},
-	{
-		name:"Nido Soup",
-		price:"175",
-		groupings:"soup"
-	},
-	{
-		name:"Hototay",
-		price:"165",
-		groupings:"soup"
-	},
-	{
-		name:"Hot Pot",
-		price:"195",
-		groupings:"soup"
-	},
-	{
-		name:"Crab and Corn",
-		price:"185",
-		groupings:"soup"
-	},
-	{
-		name:"Chef's Salad",
-		price:"165",
-		groupings:"maindishsalad"
-	},
-	{
-		name:"Caesar Salad",
-		price:"145",
-		groupings:"maindishsalad"
-	},	{
-		name:"Hot Prawn Salad",
-		price:"195",
-		groupings:"maindishsalad"
-	},	{
-		name:"Kani Salad",
-		price:"175",
-		groupings:"maindishsalad"
-	},
-	{
-		name:"Clubhouse",
-		price:"145",
-		groupings:"sandwiches"
-	},
-	{
-		name:"Bacon, Lettuce & Toamato",
-		price:"135",
-		groupings:"sandwiches"
-	},
-	{
-		name:"Crabmeat Sandwich",
-		price:"135",
-		groupings:"sandwiches"
-	},
-	{
-		name:"Leche Flan",
-		price:"155",
-		groupings:"dessert"
-	},
-	{
-		name:"Timaru",
-		price:"85",
-		groupings:"dessert"
-	},
-	{
-		name:"Fruit Salad",
-		price:"75",
-		groupings:"dessert"
-	},
-	{
-		name:"2 Scoop of Ice Cream",
-		price:"90",
-		groupings:"dessert"
-	},
-	{
-		name:"Chicken Cordon Bleu (Small/Medium)",
-		price:"275/410",
-		groupings:"chicken"
-	},
-	{
-		name:"Chicken with Chili Garlic (Small/Medium)",
-		price:"235/320",
-		groupings:"chicken"
-	},
-	{
-		name:"Stir Fry Sticky Chicken (Small/Medium)",
-		price:"275/405",
-		groupings:"chicken"
-	},
-	{
-		name:"Chicken Ala Peking Duck (Whole/Half)",
-		price:"415/225",
-		groupings:"chicken"
-	},
-	{
-		name:"Chicken Teriyaki (Whole/Half)",
-		price:"430/240",
-		groupings:"chicken"
-	},
-	{
-		name:"Pansit Hab-Hab (Small/Medium)",
-		price:"180/280",
-		groupings:"noodles"
-	},
-	{
-		name:"Pansit Lao (Small/Medium)",
-		price:"205/305",
-		groupings:"noodles"
-	},
-	{
-		name:"Canton (Small/Medium)",
-		price:"190/290",
-		groupings:"noodles"
-	},
-	{
-		name:"Chamie (Small/Medium)",
-		price:"170/240",
-		groupings:"noodles"
-	},
-	{
-		name:"Bam-I (Small/Medium)",
-		price:"205/305",
-		groupings:"noodles"
-	},
-	{
-		name:"Bihon Guisado (Small/Medium)",
-		price:"195/295",
-		groupings:"noodles"
-	},
-	{
-		name:"Lomi",
-		price:"195",
-		groupings:"noodles"
-	},
-	{
-		name:"Beef Salpicao",
-		price:"235",
-		groupings:"sizzler"
-	},
-	{
-		name:"Seafood Salpicao",
-		price:"240",
-		groupings:"sizzler"
-	},
-	{
-		name:"Sizzling Gambas",
-		price:"255",
-		groupings:"sizzler"
-	},
-	{
-		name:"Pork Sisig",
-		price:"225",
-		groupings:"sizzler"
-	},
-	{
-		name:"Coke Regular",
-		price:"45",
-		groupings:"drinks"
-	},
-	{
-		name:"Coke Light",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Coke Zero",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Royal",
-		price:"45",
-		groupings:"drinks"
-	},
-	{
-		name:"Sprite",
-		price:"45",
-		groupings:"drinks"
-	},
-	{
-		name:"Pineapple Juice",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Mango Juice",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Ice Tea",
-		price:"45",
-		groupings:"drinks"
-	},
-	{
-		name:"Bottled Water",
-		price:"35",
-		groupings:"drinks"
-	},
-	{
-		name:"",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Brewed Coffe",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Hot Choco",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"Hot Tea",
-		price:"50",
-		groupings:"drinks"
-	},
-	{
-		name:"San Miguel Pilsen",
-		price:"55",
-		groupings:"beer"
-	},
-	{
-		name:"San Miguel Light",
-		price:"55",
-		groupings:"beer"
-	},
-	{
-		name:"San Miguel Apple",
-		price:"55",
-		groupings:"beer"
-	},
-	{
-		name:"Red Horse",
-		price:"55",
-		groupings:"beer"
-	},
-	{
-		name:"Smirnoff",
-		price:"55",
-		groupings:"beer"
-	},
-	{
-		name:"Yellow Tail",
-		price:"710",
-		groupings:"beer"
-	},
-	{
-		name:"Barefoot",
-		price:"710",
-		groupings:"beer"
-	},
-	{
-		name:"Fundador Solera",
-		price:"880",
-		groupings:"brandy"
-	},
-	{
-		name:"Fundador Light 1L",
-		price:"680",
-		groupings:"brandy"
-	},
-	{
-		name:"Fundador Light 70cl",
-		price:"580",
-		groupings:"brandy"
-	},
-	{
-		name:"Black Label 1L",
-		price:"2200",
-		groupings:"brandy"
-	},
-	{
-		name:"Jose Cuervo 1L",
-		price:"1800",
-		groupings:"brandy"
-	},
-	{
-		name:"Jack Daniels 1L",
-		price:"2400",
-		groupings:"brandy"
-	},
+// eslint-disable-next-line no-undef
+export default (PatioRizalDish = [
+  {
+    name: 'Bacon Strips With Egg',
+    price: '129',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/americanbreakfast/baconstripwithegg.jpg'),
+  },
+  {
+    name: 'Spanish Omelet',
+    price: '129',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/americanbreakfast/spanishomelet.jpg'),
+  },
+  {
+    name: 'Bacon Mushroom & Cheese Omelet',
+    price: '129',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/americanbreakfast/baconmushroomandcheeseomelet.jpg'),
+  },
+  {
+    name: 'Pancake With Canadian Bacon & Egg',
+    price: '139',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/americanbreakfast/pancakewithcanadianbaconandegg.jpg'),
+  },
+  {
+    name: 'Pancake With Sausage',
+    price: '139',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/americanbreakfast/pancakewithsausage.jpg'),
+  },
+  {
+    name: 'Langgonisang Lucban',
+    price: '139',
+    groupings: 'filipinobreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/longgonisanglucban.jpeg'),
+  },
+  {
+    name: 'Corned Beef',
+    price: '139',
+    groupings: 'filipinobreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/cornedbeef.jpg'),
+  },
+  {
+    name: 'Daing na Bangus',
+    price: '139',
+    groupings: 'filipinobreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/daingnabangus.jpg'),
+  },
+  {
+    name: 'Dried Biya',
+    price: '139',
+    groupings: 'filipinobreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/driedbiya.jpg'),
+  },
+  {
+    name: 'Tocino',
+    price: '139',
+    groupings: 'filipinobreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/tocino.jpg'),
+  },
+  {
+    name: 'Kinulob',
+    price: '139',
+    groupings: 'americanbreakfast',
+    image: require('../img/patiorizal/patiorizal/filipinobreakfast/kinulob.jpg'),
+  },
+  {
+    name: 'Plain Rice',
+    price: '35',
+    groupings: 'rice',
+    image: require('../img/patiorizal/patiorizal/rice/plainrice.jpg'),
+  },
+  {
+    name: 'Garlic Rice',
+    price: '35',
+    groupings: 'rice',
+    image: require('../img/patiorizal/patiorizal/rice/garlicrice.jpg'),
+  },
+  {
+    name: 'Shanghai Rice',
+    price: '35',
+    groupings: 'rice',
+    image: require('../img/patiorizal/patiorizal/rice/shanghairice.jpg'),
+  },
+  {
+    name: 'Yan Chow Rice',
+    price: '35',
+    groupings: 'rice',
+    image: require('../img/patiorizal/patiorizal/rice/yanchowrice.jpg'),
+  },
+  {
+    name: 'Spaghetti Bolognese',
+    price: '145',
+    groupings: 'pasta',
+    image: require('../img/patiorizal/patiorizal/pasta/spaghhettibolognese.jpg'),
+  },
+  {
+    name: 'Fettuccini Carbonara',
+    price: '150',
+    groupings: 'pasta',
+    image: require('../img/patiorizal/patiorizal/pasta/fettuccinicarbonara.jpg'),
+  },
+  {
+    name: 'Baked Macaroni',
+    price: '145',
+    groupings: 'pasta',
+    image: require('../img/patiorizal/patiorizal/pasta/bakedmacaroni.jpg'),
+  },
+  {
+    name: 'Pepperoni & Sausage (Double/Family)',
+    price: '255/375',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/pepperoniandsausage.png'),
+  },
+  {
+    name: 'Hawaiian Delight (Double/Family)',
+    price: '245/365',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/hawaiiandelight.jpg'),
+  },
+  {
+    name: 'Ham & Cheese (Double/Family)',
+    price: '245/365',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/hamandcheese.jpg'),
+  },
+  {
+    name: 'Mafioso (Double/Family)',
+    price: '255/375',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/mafioso.jpg'),
+  },
+  {
+    name: 'Vegetarian (Double/Family)',
+    price: '245/365',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/vegetarian.jpg'),
+  },
+  {
+    name: 'Pepperoni (Double/Family)',
+    price: '245/365',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/pepperoni.jpg'),
+  },
+  {
+    name: 'Pan Pizza',
+    price: '140',
+    groupings: 'pizza',
+    image: require('../img/patiorizal/patiorizal/pizza/panpizza.jpg'),
+  },
+  {
+    name: 'Shrimp with Cashew Nuts (Small/Medium)',
+    price: '200/300',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/shrimpwithcashewnuts.jpg'),
+  },
+  {
+    name: 'Shrimp with Garlic (Small/Medium)',
+    price: '195/295',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/shrimpwithgarlic.jpg'),
+  },
+  {
+    name: 'Fish Fillet with LBS (Small/Medium)',
+    price: '185/285',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/fishfilletwithlbs.jpg'),
+  },
+  {
+    name: 'Fish Fillet with SSS (Small/Medium)',
+    price: '215/315',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/fishfilletwithsss.jpg'),
+  },
+  {
+    name: 'Stuffed Squid (Small/Medium)',
+    price: '165/295',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/stuffedsquid.jpg'),
+  },
+  {
+    name: 'Tanigue with Vegetables (Small/Medium)',
+    price: '230/315',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/taniguewithvegetables.jpg'),
+  },
+  {
+    name: 'Crab Fuyong',
+    price: '215',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/crabfuyong.jpg'),
+  },
+  {
+    name: 'Sinigang na Tanigue',
+    price: '305',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/sinigangnatanigue.jpg'),
+  },
+  {
+    name: 'Sinigang na Hipon',
+    price: '295',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/sinigangnahipon.jpg'),
+  },
+  {
+    name: 'Sinigang na Salmon',
+    price: '330',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/sinigangnasalmon.jpg'),
+  },
+  {
+    name: 'Salmon Steak',
+    price: '340',
+    groupings: 'seafoods',
+    image: require('../img/patiorizal/patiorizal/seafoods/salmonsteak.jpg'),
+  },
+  {
+    name: 'Chopsuey (Small/Medium)',
+    price: '205/305',
+    groupings: 'vegetables',
+    image: require('../img/patiorizal/patiorizal/vegetables/chopsuey.jpg'),
+  },
+  {
+    name: 'Stir Fry Broccoli (Small/Medium)',
+    price: '205/305',
+    groupings: 'vegetables',
+    image: require('../img/patiorizal/patiorizal/vegetables/stirfrybroccoli.jpg'),
+  },
+  {
+    name: 'Pinakbet (Small/Medium)',
+    price: '210/310',
+    groupings: 'vegetables',
+    image: require('../img/patiorizal/patiorizal/vegetables/pinakbet.jpg'),
+  },
+  {
+    name: 'Ampalaya Con Carne (Small/Medium)',
+    price: '195/295',
+    groupings: 'vegetables',
+    image: require('../img/patiorizal/patiorizal/vegetables/ampalayaconcarne.jpg'),
+  },
+  {
+    name: 'Mixed Vegetables (Small/Medium)',
+    price: '175/275',
+    groupings: 'vegetables',
+    image: require('../img/patiorizal/patiorizal/vegetables/mixedvegetables.jpg'),
+  },
+  {
+    name: 'Beef with Broccoli (Small/Medium)',
+    price: '265/365',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/beefwithbroccoli.jpg'),
+  },
+  {
+    name: 'Beef with Oyster (Small/Medium)',
+    price: '235/335',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/beefwithoyster.png'),
+  },
+  {
+    name: 'Beef with Ginger & Onion (Small/Medium)',
+    price: '235/335',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/beefandgingerandonion.jpg'),
+  },
+  {
+    name: 'Stir Fry Beef with Hoisin Sauce (Small/Medium)',
+    price: '265/365',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/stirfrybeefwithhoisinsauce.jpg'),
+  },
+  {
+    name: 'Chili Pork Spareribs (Small/Medium)',
+    price: '240/340',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/chiliporkspareribs.jpg'),
+  },
+  {
+    name: 'Sinigang na Baboy',
+    price: '280',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/sinigangnababoy.jpg'),
+  },
+  {
+    name: 'Kare-Kare',
+    price: '335',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/karekare.jpg'),
+  },
+  {
+    name: 'Lechon Kare-Kare',
+    price: '330',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/lechonkarekare.jpg'),
+  },
+  {
+    name: 'Lechon Kawali',
+    price: '',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/lechonkawali.jpg'),
+  },
+  {
+    name: 'Crispy Pata',
+    price: '450',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/crispypata.jpg'),
+  },
+  {
+    name: 'Patatim',
+    price: '550',
+    groupings: 'beefandpork',
+    image: require('../img/patiorizal/patiorizal/beefandpork/patatim.jpg'),
+  },
+  {
+    name: 'Beef with Ampalaya',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/beefwithampalaya.jpg'),
+  },
+  {
+    name: 'Beef with Oyster Sauce',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/beefwithoystersauce.jpg'),
+  },
+  {
+    name: 'Fish Fillet Lemon Butter Sauce',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/fishfilletlemonbuttersauce.jpg'),
+  },
+  {
+    name: 'Lumpiang Shanghai',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/lumpiangshanghai.jpg'),
+  },
+  {
+    name: 'Chicken with Chili Garlic',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/chickenwithchiligarlic.jpg'),
+  },
+  {
+    name: 'Lechon Kawali',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/lechonkawali.jpg'),
+  },
+  {
+    name: 'Pork Belly with Sweet & Sour Sauce',
+    price: '155',
+    groupings: 'budgetmeals',
+    image: require('../img/patiorizal/patiorizal/budgetmeals/porkbellywithsweetandsoursauce.jpg'),
+  },
+  {
+    name: 'Calamares',
+    price: '155',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/calamares.jpg'),
+  },
+  {
+    name: 'Cheese Sticks',
+    price: '135',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/cheesesticks.jpg'),
+  },
+  {
+    name: 'Nachos',
+    price: '145',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/nachos.jpg'),
+  },
+  {
+    name: 'French Fries',
+    price: '85',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/frenchfries.jpg'),
+  },
+  {
+    name: 'Kinilaw na Tanigue',
+    price: '195',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/kinilawnatanigue.jpg'),
+  },
+  {
+    name: 'Lumpiang Shanghai',
+    price: '175',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/lumpiangshanghai.jpg'),
+  },
+  {
+    name: 'Fish Fillet',
+    price: '165',
+    groupings: 'appetizer',
+    image: require('../img/patiorizal/patiorizal/appetizer/fishfinger.jpg'),
+  },
+  {
+    name: 'Asparagus with Chicken',
+    price: '175',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/asparaguswithchicken.jpg'),
+  },
+  {
+    name: 'Asparagus with Crabmeat',
+    price: '175',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/asparaguswithcrabmeat.jpg'),
+  },
+  {
+    name: 'Nido Soup',
+    price: '175',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/nidosoup.jpg'),
+  },
+  {
+    name: 'Hototay',
+    price: '165',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/hototay.jpg'),
+  },
+  {
+    name: 'Hot Pot',
+    price: '195',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/hotpot.jpg'),
+  },
+  {
+    name: 'Crab and Corn',
+    price: '185',
+    groupings: 'soup',
+    image: require('../img/patiorizal/patiorizal/soup/crabandcorn.jpg'),
+  },
+  {
+    name: "Chef's Salad",
+    price: '165',
+    groupings: 'maindishsalad',
+    image: require('../img/patiorizal/patiorizal/maindishsalad/chefsalad.jpg'),
+  },
+  {
+    name: 'Caesar Salad',
+    price: '145',
+    groupings: 'maindishsalad',
+    image: require('../img/patiorizal/patiorizal/maindishsalad/caesarsalad.jpg'),
+  },
+  {
+    name: 'Hot Prawn Salad',
+    price: '195',
+    groupings: 'maindishsalad',
+    image: require('../img/patiorizal/patiorizal/maindishsalad/hotprawnsalad.jpg'),
+  },
+  {
+    name: 'Kani Salad',
+    price: '175',
+    groupings: 'maindishsalad',
+    image: require('../img/patiorizal/patiorizal/maindishsalad/kanisalad.jpg'),
+  },
+  {
+    name: 'Clubhouse',
+    price: '145',
+    groupings: 'sandwiches',
+    image: require('../img/patiorizal/patiorizal/sandwiches/clubhouse.jpg'),
+  },
+  {
+    name: 'Bacon, Lettuce & Toamato',
+    price: '135',
+    groupings: 'sandwiches',
+    image: require('../img/patiorizal/patiorizal/sandwiches/baconlettuceandtomato.jpg'),
+  },
+  {
+    name: 'Crabmeat Sandwich',
+    price: '135',
+    groupings: 'sandwiches',
+    image: require('../img/patiorizal/patiorizal/sandwiches/crabmeatsandwich.jpg'),
+  },
+  {
+    name: 'Leche Flan',
+    price: '155',
+    groupings: 'dessert',
+    image: require('../img/patiorizal/patiorizal/dessert/lecheflan.jpg'),
+  },
+  {
+    name: 'Tiramisu',
+    price: '85',
+    groupings: 'dessert',
+    image: require('../img/patiorizal/patiorizal/dessert/tiramisu.jpg'),
+  },
+  {
+    name: 'Fruit Salad',
+    price: '75',
+    groupings: 'dessert',
+    image: require('../img/patiorizal/patiorizal/dessert/fruitsalad.jpg'),
+  },
+  {
+    name: '2 Scoop of Ice Cream',
+    price: '90',
+    groupings: 'dessert',
+    image: require('../img/patiorizal/patiorizal/dessert/2scoopoficecream.jpg'),
+  },
+  {
+    name: 'Chicken Cordon Bleu (Small/Medium)',
+    price: '275/410',
+    groupings: 'chicken',
+    image: require('../img/patiorizal/patiorizal/chicken/chickencordonbleu.jpg'),
+  },
+  {
+    name: 'Chicken with Chili Garlic (Small/Medium)',
+    price: '235/320',
+    groupings: 'chicken',
+    image: require('../img/patiorizal/patiorizal/chicken/chickenwithchiligarlic.jpg'),
+  },
+  {
+    name: 'Stir Fry Sticky Chicken (Small/Medium)',
+    price: '275/405',
+    groupings: 'chicken',
+    image: require('../img/patiorizal/patiorizal/chicken/stirfrystickychicken.jpg'),
+  },
+  {
+    name: 'Chicken Ala Peking Duck (Whole/Half)',
+    price: '415/225',
+    groupings: 'chicken',
+    image: require('../img/patiorizal/patiorizal/chicken/chickenalapekingduck.jpg'),
+  },
+  {
+    name: 'Chicken Teriyaki (Whole/Half)',
+    price: '430/240',
+    groupings: 'chicken',
+    image: require('../img/patiorizal/patiorizal/chicken/chickenteriyaki.jpg'),
+  },
+  {
+    name: 'Pansit Hab-Hab (Small/Medium)',
+    price: '180/280',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/pansithabhab.jpg'),
+  },
+  {
+    name: 'Pansit Lao (Small/Medium)',
+    price: '205/305',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/pansitlao.jpg'),
+  },
+  {
+    name: 'Canton (Small/Medium)',
+    price: '190/290',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/canton.jpg'),
+  },
+  {
+    name: 'Chamie (Small/Medium)',
+    price: '170/240',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/chamie.jpg'),
+  },
+  {
+    name: 'Bam-I (Small/Medium)',
+    price: '205/305',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/bami.jpg'),
+  },
+  {
+    name: 'Bihon Guisado (Small/Medium)',
+    price: '195/295',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/bihonguisado.jpg'),
+  },
+  {
+    name: 'Lomi',
+    price: '195',
+    groupings: 'noodles',
+    image: require('../img/patiorizal/patiorizal/noodles/lomi.jpg'),
+  },
+  {
+    name: 'Beef Salpicao',
+    price: '235',
+    groupings: 'sizzler',
+    image: require('../img/patiorizal/patiorizal/sizzler/beefsalpicao.jpg'),
+  },
+  {
+    name: 'Seafood Salpicao',
+    price: '240',
+    groupings: 'sizzler',
+    image: require('../img/patiorizal/patiorizal/sizzler/seafoodsalpicao.jpg'),
+  },
+  {
+    name: 'Sizzling Gambas',
+    price: '255',
+    groupings: 'sizzler',
+    image: require('../img/patiorizal/patiorizal/sizzler/sizzlinggambas.jpg'),
+  },
+  {
+    name: 'Pork Sisig',
+    price: '225',
+    groupings: 'sizzler',
+    image: require('../img/patiorizal/patiorizal/sizzler/porksisig.jpg'),
+  },
+  {
+    name: 'Coke Regular',
+    price: '45',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/cokeregular.jpg'),
+  },
+  {
+    name: 'Coke Light',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/cokelight.jpg'),
+  },
+  {
+    name: 'Coke Zero',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/cokezero.jpg'),
+  },
+  {
+    name: 'Royal',
+    price: '45',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/royal.jpg'),
+  },
+  {
+    name: 'Sprite',
+    price: '45',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/sprite.jpg'),
+  },
+  {
+    name: 'Pineapple Juice',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/pineapplejuice.jpg'),
+  },
+  {
+    name: 'Mango Juice',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/mangojuice.jpg'),
+  },
+  {
+    name: 'Ice Tea',
+    price: '45',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/icedtea.jpg'),
+  },
+  {
+    name: 'Bottled Water',
+    price: '35',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/bottledwater.jpg'),
+  },
+  {
+    name: 'Brewed Coffe',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/brewedcoffee.jpg'),
+  },
+  {
+    name: 'Hot Choco',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/hotchoco.jpg'),
+  },
+  {
+    name: 'Hot Tea',
+    price: '50',
+    groupings: 'drinks',
+    image: require('../img/patiorizal/patiorizal/drinks/hottea.jpg'),
+  },
+  {
+    name: 'San Miguel Pilsen',
+    price: '55',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/sanmiguelpilsen.jpg'),
+  },
+  {
+    name: 'San Miguel Light',
+    price: '55',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/sanmiguellight.jpg'),
+  },
+  {
+    name: 'San Miguel Apple',
+    price: '55',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/sanmiguelapple.jpg'),
+  },
+  {
+    name: 'Red Horse',
+    price: '55',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/redhorse.jpg'),
+  },
+  {
+    name: 'Smirnoff',
+    price: '55',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/smirnoff.jpeg'),
+  },
+  {
+    name: 'Yellow Tail',
+    price: '710',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/yellowtail.jpg'),
+  },
+  {
+    name: 'Barefoot',
+    price: '710',
+    groupings: 'beer',
+    image: require('../img/patiorizal/patiorizal/beer/barefoot.jpg'),
+  },
+  {
+    name: 'Fundador Solera',
+    price: '880',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/fundadorsolera.jpg'),
+  },
+  {
+    name: 'Fundador Light 1L',
+    price: '680',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/fundadorlight1l.jpg'),
+  },
+  {
+    name: 'Fundador Light 70cl',
+    price: '580',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/fundadorlight70.jpg'),
+  },
+  {
+    name: 'Black Label 1L',
+    price: '2200',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/blacklabel1l.jpg'),
+  },
+  {
+    name: 'Jose Cuervo 1L',
+    price: '1800',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/josecuervo1l.jpg'),
+  },
+  {
+    name: 'Jack Daniels 1L',
+    price: '2400',
+    groupings: 'brandy',
+    image: require('../img/patiorizal/patiorizal/brandy/jackdaniels1l.jpg'),
+  },
 ]);
